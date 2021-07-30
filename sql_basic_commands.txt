@@ -1,0 +1,27 @@
+create database dbname;
+show databases;
+create table tbname(id int not null auto_increment,name varchar(30) not null);
+select * from tbname;
+desc tbname;
+#to insert or add another column
+	insert into tbname(name,dept,sal)values('sai','cse',100)
+#update
+	update tbname set name='fnds' where id =2;
+show columns from emp;
+# to alter the table
+	alter table tbname add age int
+	alter table tbname drop age
+select * from emp;
+show columns from emp;
+# change table name
+alter table emp rename to emp_data
+# to find the max sal
+	select * from tbname where sal=(slect max(sal) from tbname)
+# to find second max sal
+	select max(sal) from tbname sal<(seect max(sal) from tbname)
+#to remove the duplicates in given table using distinct
+	select distinct name,sal,dept from tbname;
+#join two tables by matching
+	select columns from table1 inner join table2 condition inner join table3condition
+
+
